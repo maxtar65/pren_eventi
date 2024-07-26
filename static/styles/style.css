@@ -1,0 +1,155 @@
+/* Imposta l'altezza di html e body al 100% della finestra del browser */
+html, body {
+    height: 100%;
+}
+
+/* Stile per il marchio della navbar */
+.navbar-brand {
+    font-family: 'Rubik Marker Hatch', sans-serif; /* Font personalizzato */
+    font-size: 30px; /* Dimensione del font */
+    color: aqua; /* Colore del testo */
+}
+
+/* Stile per il corpo della pagina */
+body {
+    display: flex; /* Usa il modello di layout flexbox */
+    font-family: 'Bebas Neue', sans-serif; /* Font personalizzato */
+    flex-direction: column; /* Dispone gli elementi figli in una colonna */
+}
+
+/* Stile per il contenuto principale */
+main {
+    flex: 1; /* Permette al main di crescere per riempire lo spazio disponibile */
+}
+
+/* Classe per il colore di sfondo della pagina */
+.bg-princess-sfondo {
+    background-color: rgb(204, 238, 243); /* Colore di sfondo specifico */
+}
+
+/* Assicuro che le card abbiano la stessa altezza */
+.card {
+    display: flex; /* Usa il modello di layout flexbox */
+    flex-direction: column; /* Dispone gli elementi figli in una colonna */
+    height: 100%; /* Imposta l'altezza al 100% */
+    background-color: rgb(185, 243, 224); /* Colore di sfondo specifico per la card */
+}
+
+/* Stile per il corpo delle card */
+.card .card-body {
+    flex: 1 1 auto; /* Permette al corpo della card di crescere e ridursi automaticamente */
+    display: flex; /* Usa il modello di layout flexbox */
+    flex-direction: column; /* Dispone gli elementi figli in una colonna */
+}
+
+/* Stile per il titolo della card */
+.card .card-body h5 {
+    flex-grow: 0; /* Non permette al titolo di crescere */
+}
+
+/* Stile per il testo della card */
+.card .card-body .card-text {
+    flex-grow: 1; /* Permette al testo di crescere per riempire lo spazio disponibile */
+    margin-bottom: 10px; /* Margine inferiore per il testo */
+}
+
+/* Stile per il pulsante nella card */
+.card .card-body button {
+    align-self: right; /* Allinea il pulsante a destra */
+    margin-top: 2; /* Margine superiore */
+}
+
+/* Riduci il padding verticale della navbar */
+.navbar {
+    padding-top: 0.10rem;
+    padding-bottom: 0.10rem;
+}
+
+/* Padding e dimensione delle scritte nella navbar */
+.navbar-nav .nav-link {
+    padding-top: 0.9rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Stile personalizzato per la navbar */
+.custom-navbar {
+    background-color: #1a5f8a; /* Colore di sfondo della navbar */
+}
+
+/* Stile per il testo di errore */
+.text-danger {
+    color: red; /* Colore del testo */
+    background-color: yellow; /* Colore di sfondo */
+}
+
+/* Stile per l'immagine in cima alla card */
+.card-img-top {
+    max-width: 85px; /* Assicura che l'immagine non superi la larghezza della card */
+    max-height: 85px; /* Imposta l'altezza massima per l'immagine */
+}
+
+/* Stile per gli elementi con la classe d-flex nella card */
+.card .d-flex {
+    width: 100%; /* Imposta la larghezza al 100% */
+}
+
+/* Stile per l'immagine in cima alla card */
+.card img.card-img-top {
+    width: auto; /* Imposta la larghezza automatica */
+    height: 50px; /* Regola l'altezza in base alle tue necessità */
+}
+
+/* Stile per gli elementi con le classi bg-warning e bg-info nella card */
+.card .d-flex .bg-warning, .card .d-flex .bg-info {
+    flex: 1; /* Permette agli elementi di crescere per riempire lo spazio disponibile */
+}
+
+/* Stili per il carousel nella pagina luoghi */
+.carousel-item {
+    height: 80vh; /* Imposta l'altezza al 70% della viewport */
+    min-height: 300px; /* Imposta l'altezza minima a 300px */
+    background: no-repeat center center scroll; /* Imposta lo sfondo centrato e non ripetuto */
+    -webkit-background-size: cover; /* Compatibilità per Safari */
+    -moz-background-size: cover; /* Compatibilità per Firefox */
+    -o-background-size: cover; /* Compatibilità per Opera */
+    background-size: cover; /* Copre l'intero contenitore */
+}
+
+/* Stile per la didascalia del carousel */
+.carousel-caption {
+    bottom: 270px; /* Posiziona la didascalia a 270px dal fondo */
+    background-color: rgba(0, 0, 0, 0.5); /* Colore di sfondo semi-trasparente */
+    padding: 20px; /* Padding interno */
+    border-radius: 10px; /* Angoli arrotondati */
+}
+
+/* Stile per il titolo nella didascalia del carousel */
+.carousel-caption h5 {
+    font-size: 45px; /* Dimensione del font */
+    text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+    letter-spacing: 2px; /* Spaziatura tra le lettere */
+    margin-top: 25px; /* Margine superiore */
+}
+
+/* Stile per il paragrafo nella didascalia del carousel */
+.carousel-caption p {
+    width: 60%; /* Imposta la larghezza al 60% */
+    margin: auto; /* Centra il paragrafo */
+    font-size: 18px; /* Dimensione del font */
+    line-height: 1.9; /* Altezza della linea */
+}
+
+/* Media query per schermi più piccoli */
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 20px; /* Posiziona la didascalia a 20px dal fondo */
+    }
+    .carousel-caption h5 {
+        font-size: 25px; /* Riduce la dimensione del font del titolo */
+    }
+    .carousel-caption p {
+        font-size: 14px; /* Riduce la dimensione del font del paragrafo */
+        width: 80%; /* Imposta la larghezza al 80% */
+    }
+}
